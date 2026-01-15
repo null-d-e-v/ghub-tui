@@ -57,7 +57,7 @@ async fn main() -> Result<()> {
         }
     });
 
-    // Initial data fetch
+    // Initial data fetch v2
     let fetch_tx = tx.clone();
     tokio::spawn(async move {
         match gh::list_issues(None).await {
